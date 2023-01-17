@@ -4,15 +4,15 @@ CREATE TABLE movies (
     genres char(255),
    	PRIMARY KEY (movie_id)
  );
- 
+ Drop TABLE movies;
+ Drop TABLE ratings;
  Select * from movies;
  
  CREATE TABLE ratings(
   	user_id integer,
 	movie_id integer,
     rating integer,
-	timestamps timestamp,
-	PRIMARY KEY (movie_id)
+	timestamps integer
 );
 
 Select * from ratings
