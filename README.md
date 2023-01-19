@@ -1,3 +1,3 @@
-# Movie recommendation
+# Movie recommendations
 
-![main-screen1](https://user-images.githubusercontent.com/110397465/213388983-39b59f6c-3165-41d7-acf2-c1cebd609841.png)
+![everything_is_reco_800px_web](https://user-images.githubusercontent.com/110397465/213392639-60a5186b-cd73-45ba-bf35-0d90d481d294.jpg)
