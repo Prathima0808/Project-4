@@ -37,7 +37,7 @@
 
         3. Scikit-learn Mechiene Learning Library
 
-        4. Additional: CSS, HTML, Python, Pandas, SKLearn, Bootstrap, SQLite, Jupyter Notebook
+        4. Additional: CSS, HTML, Python, Pandas, SKLearn, Bootstrap, PostgreSql, Jupyter Notebook
 
 
 
@@ -46,8 +46,24 @@
     The data was provided to us in a CSV. We checked for any null values in the dataset, and did not have any. We also checked to verify that datatypes matched the variables values as described above. Our data checked out in all these areas, so no additional transformation was required. Then, we created an SQLite database for our data to be stored in. We did this using our knowledge of SQLite and Pandas.
 
     In this process we're extracting data into dataframe:
-
     
+
+   
+   
+ ![2023-01-27 (2)](https://user-images.githubusercontent.com/110397465/214853472-faa4d030-d317-4f3a-a9a7-4c64d655acb7.png)
+
+   # Connecting DataSets:
+
+    * Connect to the local database. Here create a config.py file and keep your username and password in it and save the config.py file in .gitignore file to keep your       username and password confidential. 
+      If it's not confidential, you can put it straight away in the code and you won't have to create config.py or .gitignore file then.
+ 
+  ![2023-01-27 (4)](https://user-images.githubusercontent.com/110397465/214854683-4c016cd1-7f95-4ce2-b19d-471241f20a4c.png)
+    
+   # Transforming Data:
+   
+   * Join the two tables in pgAdmin or join the two tables in with Pandas and SQLAlchemy.
+   
+   ![2023-01-27 (6)](https://user-images.githubusercontent.com/110397465/214855691-2d31d597-eb44-4df5-b35f-04979fd2ac36.png)
 
 
 
