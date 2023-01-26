@@ -2,6 +2,8 @@
 
 ## Team Members: Peregrin Ryan, Anam Khalid, Prathima Polavarapu, Zitarashe Okot
 
+##  https://github.com/Prathima0808/Project-4.git   
+
 
 ![everything_is_reco_800px_web](https://user-images.githubusercontent.com/110397465/213392639-60a5186b-cd73-45ba-bf35-0d90d481d294.jpg)
 
@@ -17,29 +19,23 @@
 
 
 
-# About DataSet
+# Project Overview
 
-    Knowledge-based, Content-based and Collaborative systems are built on MovieLens dataset with 100,000 movie ratings. These Recommender systems were built using Pandas operations and by fitting KNN, SVD & deep learning models which use NLP techniques and NN architecture to suggest movies for the users based on similar users and for queries specific to genre, user, movie, rating, popularity.
+    Knowledge-based, Content-based and Collaborative Recommender systems are built on MovieLens dataset with 100,000 movie ratings. These Recommender systems were built using Pandas operations and by fitting KNN, SVD & deep learning models which use NLP techniques and NN architecture to suggest movies for the users based on similar users and for queries specific to genre, user, movie, rating, popularity.
 
     A recommender system is a subclass of information filtering system that seeks to predict the "rating" or "preference" a user would give to an item. Recommender systems are utilized in a variety of areas including movies, music, news, social tags, and products in general. Recommender systems typically produce a list of recommendations and there are few ways in which it can be done. Two of the most popular ways are – through collaborative filtering or through content-based filtering.
 
     Most internet products we use today are powered by recommender systems. YouTube, Netflix, Amazon, Pinterest, and long list of other internet products all rely on recommender systems to filter millions of contents and make personalized recommendations to their users. Recommender systems are well-studied and proven to provide tremendous values to internet businesses and their consumers.
 
 
-# Requirments:
-
-    *  Clone this repository using git clone
-
-       https://github.com/Prathima0808/Project-4.git
-
+# Technologies:
 
     *   Install the following libraries in your local using terminal/Gitbash. You'll use these libraries later in your code for 
          the data analysis purpose.
 
-        1. Pandas
-        pip install pandas
-        requests
-        python -m pip install requests
+        1. [Pandas](https://www.anaconda.com/products/distribution)
+        2. [Git Bash] (https://git-scm.com/download/win)
+        3. 
         
         standard library of python so no need to download it
 
@@ -85,17 +81,46 @@
 # Data visualization,KNN Model:
 
 
-One flaw with the data set is that some movies are reviewed far more than others, this can cause a skewed recommendation for the data. This is a problem that will be addressed later in the process.
+One flaw with the data set is that some movies are reviewed far more than others, this can cause a skewed recommendation for the data. This is a problem 
+that will be addressed later in the process.
 
 
     
+![2023-01-27 (8)](https://user-images.githubusercontent.com/110397465/214870182-2429c79a-efde-466d-a491-f6626c00139f.png)
+
+
+Here we can see "Forrest Gump (1994)" has significantly more reviews than any other movie within the data set, whilst many other movies only have a single 
+review. This is a highly skewed dataset that if left unaddressed will cause the recommendations to potentially be biassed.
+
+# Data Processing:
+
+The data that has now been imported needs to be processed. The 'user_id's and 'movie_id's are being enumerated as the machine learning will be more effective when the data is 0 indexed.
+
+![2023-01-27 (10)](https://user-images.githubusercontent.com/110397465/214871911-6b71f511-beb4-4a22-9517-051d82a55f73.png)
+
+Although the 'user_id's are not the only data we are using, we are aiming to include movies in the deep learning model as well. This means we need to enumerate the 'movie_id' so we can use them later in the process.
+
+
+
+## Movie Recommendation using KNN with Input as Movie ID and Number of movies you want to get recommended:
+
+
+  Reshaping model in such a way that each movie has n-dimensional rating space where n is total number of users who could rate.
+
+We will train the KNN model inorder to find the closely matching similar movies to the movie we give as input and we recommend the top movies which would more closely align to the movie we have given.
+
+For this section, a separate list for movie names and also case insensitive movie names and a dictionary which maps movie name with the index are created.
+
+Basic output of this recommender system using KNN:
+![2023-01-27 (12)](https://user-images.githubusercontent.com/110397465/214875021-e4bf1bd2-59e0-4238-afed-ccc8b256510e.png)
+
+# Observasions:  
+
+  An interesting observation would be that the above KNN model for movies recommends movies that are produced in very similar years of the input movie. However, the cosine distance of all those recommendations are observed to be actually quite small. This might be because there are too many zero values in our movie-user matrix. With too many zero values in our data, the data sparsity becomes a real issue for KNN model and the distance in KNN model starts to fall apart.
 
 
 
 
-
-
-   
 
 
 
