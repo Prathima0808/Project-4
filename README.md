@@ -1,7 +1,19 @@
 # Movie recommendation
 
+## Team Members: Peregrin Ryan, Anam Khalid, Prathima Polavarapu, Zitarashe Okot
+
 
 ![everything_is_reco_800px_web](https://user-images.githubusercontent.com/110397465/213392639-60a5186b-cd73-45ba-bf35-0d90d481d294.jpg)
+
+
+# Contents:
+
+    1. [About DataSet]
+    2. [Technologies]
+    3. [Extracting, Transforming and Loading process]
+    4. []
+
+
 
 
 
@@ -18,10 +30,11 @@
 
     *  Clone this repository using git clone
 
-    https://github.com/Prathima0808/Project-4.git
+       https://github.com/Prathima0808/Project-4.git
 
 
-    *   Install the following libraries in your local using terminal/Gitbash. You'll use these libraries later in your code for the data analysis purpose.
+    *   Install the following libraries in your local using terminal/Gitbash. You'll use these libraries later in your code for 
+         the data analysis purpose.
 
         1. Pandas
         pip install pandas
@@ -46,6 +59,8 @@
     The data was provided to us in a CSV. We checked for any null values in the dataset, and did not have any. We also checked to verify that datatypes matched the variables values as described above. Our data checked out in all these areas, so no additional transformation was required. Then, we created an SQLite database for our data to be stored in. We did this using our knowledge of SQLite and Pandas.
 
     In this process we're extracting data into dataframe:
+<<<<<<< HEAD
+=======
     
 
    
@@ -58,6 +73,7 @@
       If it's not confidential, you can put it straight away in the code and you won't have to create config.py or .gitignore file then.
  
   ![2023-01-27 (4)](https://user-images.githubusercontent.com/110397465/214854683-4c016cd1-7f95-4ce2-b19d-471241f20a4c.png)
+>>>>>>> f297c66fba7fed16b973c271d9aa7dcdd9c38f07
     
    # Transforming Data:
    
@@ -66,11 +82,10 @@
    ![2023-01-27 (6)](https://user-images.githubusercontent.com/110397465/214855691-2d31d597-eb44-4df5-b35f-04979fd2ac36.png)
 
 
+# Data visualization,KNN Model:
 
 
-
-# Exploratory Data Analysis:
-
+One flaw with the data set is that some movies are reviewed far more than others, this can cause a skewed recommendation for the data. This is a problem that will be addressed later in the process.
 
 
     
