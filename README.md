@@ -10,7 +10,7 @@
 
 # Contents:
 
-    1. [About DataSet]
+    1. [Project Overview](https://github.com/Prathima0808/Project-4/blob/main/README.md#extracting-transforming-and-loading-process-etl)
     2. [Technologies]
     3. [Extracting, Transforming and Loading process]
     4. []
@@ -55,13 +55,8 @@
     The data was provided to us in a CSV. We checked for any null values in the dataset, and did not have any. We also checked to verify that datatypes matched the variables values as described above. Our data checked out in all these areas, so no additional transformation was required. Then, we created an SQLite database for our data to be stored in. We did this using our knowledge of SQLite and Pandas.
 
     In this process we're extracting data into dataframe:
-<<<<<<< HEAD
-=======
     
-
-   
-   
- ![2023-01-27 (2)](https://user-images.githubusercontent.com/110397465/214853472-faa4d030-d317-4f3a-a9a7-4c64d655acb7.png)
+![2023-01-27 (2)](https://user-images.githubusercontent.com/110397465/214853472-faa4d030-d317-4f3a-a9a7-4c64d655acb7.png)
 
    # Connecting DataSets:
 
