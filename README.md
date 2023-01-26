@@ -31,16 +31,7 @@
     These Recommender systems were built using Pandas operations and by fitting KNN, SVD & deep learning models which use NLP techniques 
     and NN architecture to suggest movies for the users based on similar users and for queries specific to genre, user, movie, rating, popularity.
 
-    A recommender system is a subclass of information filtering system that seeks to predict the "rating" or "preference" a user would give to an item. 
-    Recommender systems are utilized in a variety of areas including movies, music, news, social tags, and products in general. Recommender systems typically 
-    produce a list of recommendations and there are few ways in which it can be done. Two of the most popular ways are – through collaborative filtering
-    or through content-based filtering.
-
-    Most internet products we use today are powered by recommender systems. YouTube, Netflix, Amazon, Pinterest, and long list of other internet products 
-    all rely on recommender systems to filter millions of contents and make personalized recommendations to their users. Recommender systems are well-studied 
-    and proven to provide tremendous values to internet businesses and their consumers.
-
-
+   
 # Technologies:
 
     *   Install the following libraries in your local using terminal/Gitbash. You'll use these libraries later in your code for 
