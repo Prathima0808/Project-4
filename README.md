@@ -54,26 +54,26 @@ user's preferences.
  1. [Repository address]( https://github.com/Prathima0808/Project-4.git)
  2. Clone the reposirory by using Local Terminal Gitbash [Gitbash Terminal](https://git-scm.com/download/win)
  3. using the [Jupyter Notebook](https://jupyter.org/) in which you performed the preprocessing steps.
- 3. [pandas](https://www.anaconda.com/products/distribution)
+ 4. [pandas](https://www.anaconda.com/products/distribution)
  
-   #### [Managing Libraries](https://pypi.org/project/pip/)
- 4. sqlalchemy (SQl database)
+#### [Managing Libraries](https://pypi.org/project/pip/)
+ 5. sqlalchemy (SQl database)
     * conda install -c anaconda sqlalchemy
     * config
     * pip install config
  
- 5. matplotlib.pyplot
+ 6. matplotlib.pyplot
  
-   * pip install matplotlib
+    * pip install matplotlib
   
- 6. tensorflow
+ 7. tensorflow
     
     * pip install tensorflow
- 7. numpy
+ 8. numpy
     
     * pip install Numpy
     
- 5. Scikit-learn Mechiene Learning Library
+ 9. Scikit-learn Mechiene Learning Library
 
 
 
