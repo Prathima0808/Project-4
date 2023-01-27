@@ -11,34 +11,47 @@
 # Contents:
 
  1. [Project Overview](https://github.com/Prathima0808/Project-4/edit/main/README.md#project-overview)
- 2. [Technologies](https://github.com/Prathima0808/Project-4/edit/main/README.md#technologies)
- 3. [Extracting, Transforming and Loading process](https://github.com/Prathima0808/Project-4/edit/main/README.md#extracting-transforming-and-loading-process-etl)
+ 2. [About DataSet](https://github.com/Prathima0808/Project-4/edit/main/README.md#about-dataset)
+ 3. [Technologies](https://github.com/Prathima0808/Project-4/edit/main/README.md#technologies)
+ 4. [Extracting, Transforming and Loading process](https://github.com/Prathima0808/Project-4/edit/main/README.md#extracting-transforming-and-loading-process-etl)
     *  [Connecting DataSets](https://github.com/Prathima0808/Project-4/edit/main/README.md#connecting-datasets)
     *  [Transforming Data](https://github.com/Prathima0808/Project-4/edit/main/README.md#transforming-data)
- 4. [Data visualization,KNN Model](https://github.com/Prathima0808/Project-4/edit/main/README.md#data-visualizationknn-model)
+ 5. [Data visualization,KNN Model](https://github.com/Prathima0808/Project-4/edit/main/README.md#data-visualizationknn-model)
     *  [Data Processing](https://github.com/Prathima0808/Project-4/edit/main/README.md#data-processing)
- 5. [ Movie Recommendation using KNN](https://github.com/Prathima0808/Project-4/edit/main/README.md#movie-recommendation-using-knn-with-input-as-movie-id-and-number-of-movies-you-want-to-get-recommended)
- 6. [Observasions.](https://github.com/Prathima0808/Project-4/edit/main/README.md#observasions)
-
-
-
-
+ 6. [ Movie Recommendation using KNN](https://github.com/Prathima0808/Project-4/edit/main/README.md#movie-recommendation-using-knn-with-input-as-movie-id-and-number-of-movies-you-want-to-get-recommended)
+ 7. [Observasions.](https://github.com/Prathima0808/Project-4/edit/main/README.md#observasions)
 
 
 # Project Overview
 
-    Knowledge-based, Content-based and Collaborative Recommender systems are built on MovieLens dataset with 100,000 movie ratings. 
-    These Recommender systems were built using Pandas operations and by fitting KNN, SVD & deep learning models which use NLP techniques 
-    and NN architecture to suggest movies for the users based on similar users and for queries specific to genre, user, movie, rating, popularity.
+    Knowledge-based, Content-based and Collaborative Recommender systems are built on MovieLens dataset with 100,000 movie 
+    ratings. These Recommender systems were built using Pandas operations and by fitting KNN, SVD & deep learning models which
+    use NLP techniques and NN architecture to suggest movies for the users based on similar users and for queries specific to
+    genre, user, movie, rating, popularity.
+    
+# About DataSet
+In this Project We're used [Movie Lens](https://movielens.org/) Dataset. MovieLens is a rating dataset from the MovieLens website, 
+which has been collected over some period. Stable benchmark dataset. 100,000 ratings from 1000 users on 1700 movies. 
+Further information regarding this dataset can be found [here](https://www.kaggle.com/datasets/shubhammehta21/movie-lens-small-latest-dataset).
+
+This Dataset Consists of 
+
+ ## Our Aim:
+ 
+ What to watch? With so many new and old movies out there we are spoiled for choice of what movies to watch next. But that choice leaves us spending more time 
+ looking for the next movie than actually watching it! It’s also hard to tell if we will even like the movie we settle on with just a blurb and a poster. 
+ Our goal is to fix this great problem of our time by creating a machine learning model that will help users find what movies to watch next based on a 
+ user's preferences.
+ 
+
+
 
    
 # Technologies:
-
-    *   Install the following libraries in your local using terminal/Gitbash. You'll use these libraries later in your code for 
+*   Install the following libraries in your local using terminal/Gitbash. You'll use these libraries later in your code for 
          the data analysis purpose.
-
-        1. [Pandas](https://www.anaconda.com/products/distribution)
-        2. [Git Bash] (https://git-scm.com/download/win)
+ * [Pandas](https://www.anaconda.com/products/distribution)
+ * [Git Bash] (https://git-scm.com/download/win)
         3. 
         
         standard library of python so no need to download it
@@ -56,7 +69,9 @@
 
 # Extracting, Transforming and Loading process (ETL)
 
-    The data was provided to us in a CSV. We checked for any null values in the dataset, and did not have any. We also checked to verify that datatypes matched the variables values as described above. Our data checked out in all these areas, so no additional transformation was required. Then, we created an SQLite database for our data to be stored in. We did this using our knowledge of SQLite and Pandas.
+    The data was provided to us in a CSV. We checked for any null values in the dataset, and did not have any. We also checked to verify that datatypes 
+    matched the variables values as described above. Our data checked out in all these areas, so no additional transformation was required. 
+    Then, we created an SQLite database for our data to be stored in. We did this using our knowledge of SQLite and Pandas.
 
     In this process we're extracting data into dataframe:
     
