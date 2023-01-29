@@ -122,7 +122,7 @@ that will be addressed later in the process.
 Here we can see "Forrest Gump (1994)" has significantly more reviews than any other movie within the data set, whilst many other movies only have a single 
 review. This is a highly skewed dataset that if left unaddressed will cause the recommendations to potentially be biassed.
 
-# Data Processing:
+## Data Processing:
 
 The data that has now been imported needs to be processed. The 'user_id's and 'movie_id's are being enumerated as the machine learning will be more effective when the data is 0 indexed.
 
