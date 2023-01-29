@@ -47,7 +47,7 @@ looking for the next movie than actually watching it! It’s also hard to tell i
 Our goal is to fix this great problem of our time by creating a machine learning model that will help users find what movies to watch next based on a 
 user's preferences.
  
-# Getting Strated:
+# [Getting Strated:](https://github.com/Prathima0808/Project-4/edit/main/README.md#getting-strated)
 
  To get a local copy up and running follow these simple example steps:
  
