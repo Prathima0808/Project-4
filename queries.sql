@@ -1,12 +1,14 @@
+Drop TABLE movies;
+Drop TABLE ratings;
+
 CREATE TABLE movies (
     movie_id integer,
 	title char(255),
     genres char(255),
    	PRIMARY KEY (movie_id)
  );
- Drop TABLE movies;
- Drop TABLE ratings;
- Select * from movies;
+
+Select * from movies;
  
  CREATE TABLE ratings(
   	user_id integer,
