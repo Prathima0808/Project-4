@@ -25,18 +25,18 @@
 
 # Project Overview
 
-Knowledge-based, Content-based and Collaborative Recommender systems are built on MovieLens dataset with 100,000 movie ratings. These Recommender systems were
-built using Pandas operations and by fitting KNN, SVD & deep learning models which use NLP techniques and NN architecture to suggest movies for the users based 
+Knowledge-based, Content-based and Collaborative Recommender systems are built on MovieLens dataset with 100836 movie ratings/reviews. These Recommender systems were
+built using Pandas operations and by fitting KNN (K-Nearest Neighbours Algorithm), NCF (Neural Collaborative Filtering) & deep learning models which use NN (Neural Network) architecture to suggest movies for the users based 
 on similar users and for queries specific to genre, user, movie, rating, popularity.
 
 # About DataSet
 
 In this Project We're used [Movie Lens](https://movielens.org/) Dataset. MovieLens is a rating dataset from the MovieLens website, 
-which has been collected over some period. Stable benchmark dataset. 100,000 ratings from 1000 users on 1700 movies. 
+which has been collected over some period. Stable benchmark dataset. 100836 ratings from 610 users on 9724 movies. 
 Further information regarding this dataset can be found [here](https://www.kaggle.com/datasets/shubhammehta21/movie-lens-small-latest-dataset).
 
   This Dataset Consists of 
-  * 10,000 ratings from 943 users on 1682 movies.
+  * 100836 ratings from 610 users on 9724 movies.
   * Each user has rated at least 20 movies.
   * Simple info contains like( Movie Id, genre, movie Rating)
 
@@ -51,29 +51,30 @@ user's preferences.
 
  To get a local copy up and running follow these simple example steps:
  
- 1. [Repository address]( https://github.com/Prathima0808/Project-4.git)
- 2. Clone the reposirory by using Local Terminal Gitbash [Gitbash Terminal](https://git-scm.com/download/win)
- 3. using the [Jupyter Notebook](https://jupyter.org/) in which you performed the preprocessing steps.
- 4. [pandas](https://www.anaconda.com/products/distribution)
+ 1. Clone the reposirory by using Local Terminal Gitbash [Gitbash Terminal](https://git-scm.com/download/win)
+ 2. using the [Jupyter Notebook](https://jupyter.org/) in which you performed the preprocessing steps.
+ 
  
 #### [Managing Libraries](https://pypi.org/project/pip/)
- 5. sqlalchemy (SQl database)
+
+ 3. sqlalchemy (SQl database)
     * conda install -c anaconda sqlalchemy
     * config
     * pip install config
  
- 6. matplotlib.pyplot
+ 4. matplotlib.pyplot
  
     * pip install matplotlib
   
- 7. tensorflow
+ 5. tensorflow
     
     * pip install tensorflow
- 8. numpy
+    
+ 6. numpy
     
     * pip install Numpy
     
- 9. Scikit-learn Mechiene Learning Library
+ 7. Scikit-learn Mechiene Learning Library
 
 
 
@@ -88,7 +89,7 @@ user's preferences.
     
 ![2023-01-27 (2)](https://user-images.githubusercontent.com/110397465/214853472-faa4d030-d317-4f3a-a9a7-4c64d655acb7.png)
 
-   # Connecting DataSets:
+   ## Connecting DataSets:
    
    * Connect to the local database. Here create a config.py file and keep your username and password in it and save the config.py file in .gitignore file to keep your       username and password confidential. 
       If it's not confidential, you can put it straight away in the code and you won't have to create config.py or .gitignore file then.
@@ -96,7 +97,7 @@ user's preferences.
   ![2023-01-27 (4)](https://user-images.githubusercontent.com/110397465/214854683-4c016cd1-7f95-4ce2-b19d-471241f20a4c.png)
 >>>>>>> f297c66fba7fed16b973c271d9aa7dcdd9c38f07
     
-   # Transforming and Loading Data:
+   ## Transforming and Loading Data:
    
    * We're choose SQL, first use Spark on Colab to extract and transform the data and then load it into a SQL table on your RDS account. Perform analysis 
      with SQL queries on RDS.
