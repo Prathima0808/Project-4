@@ -1,4 +1,4 @@
-# Movie recommendation
+<h1 align="center">Movie Recommendation</h1>
 
 ## Team Members: Peregrin Ryan, Anam Khalid, Prathima Polavarapu, Zitarashe Okot
 
