@@ -108,30 +108,6 @@ user's preferences.
    ![2023-01-27 (6)](https://user-images.githubusercontent.com/110397465/214855691-2d31d597-eb44-4df5-b35f-04979fd2ac36.png)
    
    
-# Data visualization,KNN Model:
-
-
-One flaw with the data set is that some movies are reviewed far more than others, this can cause a skewed recommendation for the data. This is a problem 
-that will be addressed later in the process.
-
-
-    
-![2023-01-27 (8)](https://user-images.githubusercontent.com/110397465/214870182-2429c79a-efde-466d-a491-f6626c00139f.png)
-
-
-Here we can see "Forrest Gump (1994)" has significantly more reviews than any other movie within the data set, whilst many other movies only have a single 
-review. This is a highly skewed dataset that if left unaddressed will cause the recommendations to potentially be biassed.
-
-## Data Processing:
-
-The data that has now been imported needs to be processed. The 'user_id's and 'movie_id's are being enumerated as the machine learning will be more effective when the data is 0 indexed.
-
-![2023-01-27 (10)](https://user-images.githubusercontent.com/110397465/214871911-6b71f511-beb4-4a22-9517-051d82a55f73.png)
-
-Although the 'user_id's are not the only data we are using, we are aiming to include movies in the deep learning model as well. This means we need to enumerate the 'movie_id' so we can use them later in the process.
-
-
-
 ## Movie Recommendation using KNN with Input as Movie ID and Number of movies you want to get recommended:
 
 
