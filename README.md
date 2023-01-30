@@ -16,8 +16,6 @@
  4. [Extracting, Transforming and Loading process](https://github.com/Prathima0808/Project-4/edit/main/README.md#extracting-transforming-and-loading-process-etl)
     *  [Connecting DataSets](https://github.com/Prathima0808/Project-4/edit/main/README.md#connecting-datasets)
     *  [Transforming and Loading Data](https://github.com/Prathima0808/Project-4/edit/main/README.md#transforming-and-loading-data)
- 5. [Data visualization,KNN Model](https://github.com/Prathima0808/Project-4/edit/main/README.md#data-visualizationknn-model)
-    *  [Data Processing](https://github.com/Prathima0808/Project-4/edit/main/README.md#data-processing)
  6. [ Movie Recommendation using KNN](https://github.com/Prathima0808/Project-4/edit/main/README.md#movie-recommendation-using-knn-with-input-as-movie-id-and-number-of-movies-you-want-to-get-recommended)
  7. [Observasions.](https://github.com/Prathima0808/Project-4/edit/main/README.md#observasions)
  8. [Reference](https://github.com/Prathima0808/Project-4/edit/main/README.md#reference)
