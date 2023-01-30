@@ -95,7 +95,6 @@ user's preferences.
       If it's not confidential, you can put it straight away in the code and you won't have to create config.py or .gitignore file then.
  
   ![2023-01-27 (4)](https://user-images.githubusercontent.com/110397465/214854683-4c016cd1-7f95-4ce2-b19d-471241f20a4c.png)
->>>>>>> f297c66fba7fed16b973c271d9aa7dcdd9c38f07
     
    ## Transforming and Loading Data:
    
@@ -108,47 +107,28 @@ user's preferences.
    ![2023-01-27 (6)](https://user-images.githubusercontent.com/110397465/214855691-2d31d597-eb44-4df5-b35f-04979fd2ac36.png)
    
    
-# Data visualization,KNN Model:
+## K-nearest neighbor model (KNN)
+To run and view the KNN model, run the cells in the data_etl.ipynb after the ETL process has been completed (after cell 12) assuming all dependencies have been installed. The model is built by first preparing the data by transforming reviews of 4 stars or higher into values of 1 and reviews lower than 4 stars as 0. Then users with 10 reviews or less are removed from the dataset. After, the data is split into X (movie_id,user_id,timestamps) and y (ratings) for training and testing data. Then the data is scaled, and the KNN model is built, with an accuracy of 78.8%. The process of training the KNN model is also provided as a line graph.
 
+![KNN first graph](Images/KNN_model1.PNG)
 
-One flaw with the data set is that some movies are reviewed far more than others, this can cause a skewed recommendation for the data. This is a problem 
-that will be addressed later in the process.
+Two more optimisations were performed on the dataset prior to building the data; the second and more successful optimisation had made reviews of 2.5 stars or more into 1 and reviews lower into 0, similar to the first iterations cleaning process. This had made the model roughly 7% more accurate providing a test score of 85.9%.
 
+![KNN first graph](Images/KNN_model2.PNG)
 
-    
-![2023-01-27 (8)](https://user-images.githubusercontent.com/110397465/214870182-2429c79a-efde-466d-a491-f6626c00139f.png)
+## Neural Network
+The neural network model is located in the “movie_recommendation_using_NN.ipynb” folder. The aim was to use collaborative filtering similar to that of the Kears model provided in their documentation [2]. As well as the model written about in “Neural Collaborative Filtering” [1] . Where users are recommended content based upon similar users preferences, as well as their own preferences. 
 
+To run this file simply open “movie_recommendation_using_NN.ipynb” and run all cells (assuming all dependencies are correctly installed). This process may take some time as there are multiple iterations of the neural collaborative filtering model (NCF).
 
-Here we can see "Forrest Gump (1994)" has significantly more reviews than any other movie within the data set, whilst many other movies only have a single 
-review. This is a highly skewed dataset that if left unaddressed will cause the recommendations to potentially be biassed.
+The program loads in the data from the SQL database, then it cleans the data by creating a dataframe of only needed columns and prepares the data by enumerating it so it indexes at 0 for the machine learning model. As well as creating x and y variables, creating training and testing data and splitting the data. Then a sequential Keras model is built, that is optimized through 4 iterations, then the model visualizes a dataframe of the 10 movie recommendations for the user based on the user_id provided.
 
-## Data Processing:
+Here is an example of movie recommendations for user 314:
+![Example Recommendations List](Images/user_314_movie_rec.PNG)
 
-The data that has now been imported needs to be processed. The 'user_id's and 'movie_id's are being enumerated as the machine learning will be more effective when the data is 0 indexed.
+[1] "Neural Collaborative Filtering", acessed on the 18th Juanuary 2023. (https://arxiv.org/abs/1708.05031)
+[2] "Collaborative Filtering for Movie Recommendations", acessed on the 17th Juanuary 2023 (https://keras.io/examples/structured_data/collaborative_filtering_movielens/)
 
-![2023-01-27 (10)](https://user-images.githubusercontent.com/110397465/214871911-6b71f511-beb4-4a22-9517-051d82a55f73.png)
-
-Although the 'user_id's are not the only data we are using, we are aiming to include movies in the deep learning model as well. This means we need to enumerate the 'movie_id' so we can use them later in the process.
-
-
-
-## Movie Recommendation using KNN with Input as Movie ID and Number of movies you want to get recommended:
-
-
-  Reshaping model in such a way that each movie has n-dimensional rating space where n is total number of users who could rate.
-
-We will train the KNN model inorder to find the closely matching similar movies to the movie we give as input and we recommend the top movies which would more closely align to the movie we have given.
-
-For this section, a separate list for movie names and also case insensitive movie names and a dictionary which maps movie name with the index are created.
-
-Basic output of this recommender system using KNN:
-![2023-01-27 (12)](https://user-images.githubusercontent.com/110397465/214875021-e4bf1bd2-59e0-4238-afed-ccc8b256510e.png)
-
-# Observasions:  
-
-  
-  
-  
 # Reference:  
 
 * [Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)
